@@ -48,6 +48,14 @@ Model selection:
 - After selecting the best-performing configuration (**BoW with ngram(1,2) + L2**), tuned regularization strength **`C`** on the dev set  
   Best found: **`C = 0.3`**
 
+### 4) Model interpretation
+
+The figure below shows the top positive and negative coefficients learned by an
+L2-regularized Logistic Regression model using Bag-of-Words with unigram and bigram
+(ngram_range=(1,2)) features.
+
+<img src="l2_ngram_word_importance.png" width="520" />
+
 ---
 
 ## How to run
